@@ -41,6 +41,8 @@
     <Content Include="wwwroot\font\roboto\Roboto-Thin.woff2" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.0.2" />
+    <PackageReference Include="log4net" Version="2.0.8" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="1.1.1" />
@@ -56,6 +58,7 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="1.1.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
   </ItemGroup>
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.0" />
@@ -64,6 +67,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\SPA\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SPATemplate.Entities\SPATemplate.Entities.csproj" />
+    <ProjectReference Include="..\SPATemplate.Services\SPATemplate.Services.csproj" />
   </ItemGroup>
 
 </Project>
