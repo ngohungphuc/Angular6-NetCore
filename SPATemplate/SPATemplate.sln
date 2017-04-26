@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SPATemplate", "SPATemplate\SPATemplate.csproj", "{3424B1CA-6429-4B9A-8B1D-4DE0DB0B348C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SPATemplate.Web", "SPATemplate.Web\SPATemplate.Web.csproj", "{3424B1CA-6429-4B9A-8B1D-4DE0DB0B348C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPATemplate.Services", "SPATemplate.Services\SPATemplate.Services.csproj", "{17D06631-C304-4207-80F6-2400885BED76}"
 EndProject

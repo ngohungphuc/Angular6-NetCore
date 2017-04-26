@@ -1,0 +1,77 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <UserSecretsId>aspnet-SPATemplate-3e0cf027-f032-40e9-872f-5108a97c06a2</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\font\fontawesome-webfont.eot" />
+    <Content Include="wwwroot\font\fontawesome-webfont.svg" />
+    <Content Include="wwwroot\font\fontawesome-webfont.ttf" />
+    <Content Include="wwwroot\font\fontawesome-webfont.woff" />
+    <Content Include="wwwroot\font\fontawesome-webfont.woff2" />
+    <Content Include="wwwroot\font\FontAwesome.otf" />
+    <Content Include="wwwroot\font\roboto\Roboto-Bold.eot" />
+    <Content Include="wwwroot\font\roboto\Roboto-Bold.ttf" />
+    <Content Include="wwwroot\font\roboto\Roboto-Bold.woff" />
+    <Content Include="wwwroot\font\roboto\Roboto-Bold.woff2" />
+    <Content Include="wwwroot\font\roboto\Roboto-Light.eot" />
+    <Content Include="wwwroot\font\roboto\Roboto-Light.ttf" />
+    <Content Include="wwwroot\font\roboto\Roboto-Light.woff" />
+    <Content Include="wwwroot\font\roboto\Roboto-Light.woff2" />
+    <Content Include="wwwroot\font\roboto\Roboto-Medium.eot" />
+    <Content Include="wwwroot\font\roboto\Roboto-Medium.ttf" />
+    <Content Include="wwwroot\font\roboto\Roboto-Medium.woff" />
+    <Content Include="wwwroot\font\roboto\Roboto-Medium.woff2" />
+    <Content Include="wwwroot\font\roboto\Roboto-Regular.eot" />
+    <Content Include="wwwroot\font\roboto\Roboto-Regular.ttf" />
+    <Content Include="wwwroot\font\roboto\Roboto-Regular.woff" />
+    <Content Include="wwwroot\font\roboto\Roboto-Regular.woff2" />
+    <Content Include="wwwroot\font\roboto\Roboto-Thin.eot" />
+    <Content Include="wwwroot\font\roboto\Roboto-Thin.ttf" />
+    <Content Include="wwwroot\font\roboto\Roboto-Thin.woff" />
+    <Content Include="wwwroot\font\roboto\Roboto-Thin.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.0.2" />
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="1.1.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="1.1.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.0" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="1.0.0" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\API\" />
+    <Folder Include="Controllers\SPA\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SPATemplate.Entities\SPATemplate.Entities.csproj" />
+    <ProjectReference Include="..\SPATemplate.Services\SPATemplate.Services.csproj" />
+  </ItemGroup>
+
+</Project>
