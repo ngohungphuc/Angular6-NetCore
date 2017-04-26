@@ -1,8 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,kBAAmB,CACf,MAAM,CAAE,aAAa",
-"sources": ["wwwroot/sass/_index.scss"],
-"sourcesContent": ["﻿.loading-component {\n    margin: 20% 45% 0 45%;\n}"],
-"names": [],
-"file": "site.css"
-}
