@@ -1,12 +1,12 @@
 ﻿module.exports = function (grunt) {
-    grunt.loadNpmTasks("grunt-contrib-sass")
-    grunt.loadNpmTasks("grunt-contrib-watch")
-    grunt.loadNpmTasks("grunt-contrib-cssmin")
-    grunt.loadNpmTasks("grunt-contrib-clean")
-    grunt.loadNpmTasks("grunt-contrib-uglify")
-    grunt.loadNpmTasks("grunt-contrib-concat")
-    grunt.loadNpmTasks("grunt-concurrent")
-    grunt.loadNpmTasks("grunt-tslint")
+    grunt.loadNpmTasks("grunt-contrib-sass");
+    grunt.loadNpmTasks("grunt-contrib-watch");
+    grunt.loadNpmTasks("grunt-contrib-cssmin");
+    grunt.loadNpmTasks("grunt-contrib-clean");
+    grunt.loadNpmTasks("grunt-contrib-uglify");
+    grunt.loadNpmTasks("grunt-contrib-concat");
+    grunt.loadNpmTasks("grunt-concurrent");
+    grunt.loadNpmTasks("grunt-tslint");
     grunt.initConfig({
         tslint: {
             options: {
@@ -24,7 +24,8 @@
                 options: {
                     style: "compressed",
                     sourcemap: "inline",
-                    trace: true
+                    trace: true,
+                    compass: true
                 },
                 files: {
                     "wwwroot/css/site.css": "wwwroot/sass/site.scss"
