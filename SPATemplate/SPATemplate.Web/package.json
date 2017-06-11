@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "~4.0.0",
     "@angular/router": "~4.0.0",
     "angular-in-memory-web-api": "~0.3.0",
+    "angular2-jwt": "^0.2.3",
     "core-js": "^2.4.1",
     "rxjs": "5.0.1",
     "systemjs": "^0.20.12",
@@ -37,6 +38,7 @@
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^2.3.0",
     "grunt-contrib-watch": "^1.0.0",
+    "grunt-shell": "^2.1.0",
     "grunt-tslint": "^5.0.1",
     "tslint": "^5.1.0",
     "typescript": "^2.2.2"

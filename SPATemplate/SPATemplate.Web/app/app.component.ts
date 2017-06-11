@@ -5,5 +5,5 @@
     templateUrl: 'partial/app'
 })
 export class AppComponent {
-    welcomeMsg = 'Welcome to Angular4 & ASP.Net Core'
+    welcomeMsg = 'Welcome to Angular4 & ASP.Net Core made by Tony'
 }

@@ -7,7 +7,13 @@
     grunt.loadNpmTasks("grunt-contrib-concat");
     grunt.loadNpmTasks("grunt-concurrent");
     grunt.loadNpmTasks("grunt-tslint");
+    grunt.loadNpmTasks('grunt-shell');
     grunt.initConfig({
+        shell: {
+            ngapp: {
+                command: 'tsc -p app/ -w'
+            }
+        },
         tslint: {
             options: {
                 configuration: "./tslint.json",
@@ -36,10 +42,10 @@
             target: {
                 files: {
                     "wwwroot/css/site.min.css": [
-                        "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+                        "wwwroot/css/bootstrap.min.css",
+                        "wwwroot/css/font-awesome.css",
                         "wwwroot/css/mdb.css",
-                        "wwwroot/lib/font-awesome/css/font-awesome.css",
-                        "wwwroot/lib/toastr/toastr.css",
+                        "wwwroot/css/toastr.min.css",
                         "wwwroot/css/site.css"
                     ]
                 }
@@ -53,7 +59,7 @@
                         "wwwroot/node_modules/zone.js/dist/zone.js",
                         "wwwroot/node_modules/systemjs/dist/system.src.js",
                         "wwwroot/js/systemjs.config.js",
-                        "wwwroot/js/compiled.min.js",
+                        "wwwroot/js/mdb.min.js",
                         "wwwroot/js/toastr.min.js"
                     ]
                 }
@@ -90,7 +96,7 @@
         concurrent: {
             dev: {
                 tasks: [
-                    "watch"
+                    "watch", 'shell'
                 ],
                 options: {
                     logConcurrentOutput: true
@@ -101,7 +107,7 @@
             css: [
                 "wwwroot/css/site.min.css", "wwwroot/css/site.css"
             ],
-            js: ["wwwroot/js/app.min.js"]
+            js: ["wwwroot/app", "wwwroot/js/app.min.js"]
         }
     });
     grunt.registerTask("default",
